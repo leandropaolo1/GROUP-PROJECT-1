@@ -14,75 +14,124 @@
 
     <div class="custom-navbar">
         <div style="display: flex;">
-            <h1 style="font-weight: 100;">Brazil: World class cuisine with added culture</h1>
+            <h2 style="font-weight: 700;">Brazil: World class cuisine with added culture</h1>
 
+        </div>
+    </div>
+    <div class="custom-height d-flex-inline-slideshow">
+        <div class="row">
+
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+                    <div style="margin-right: 3%;">
+                        <div style="display: flex;">
+                            <div>
+                                <img src="images/Brazilian-Art1.jpg" alt="Capoeira" class="justify-items:center">
+
+                            </div>
+                            <div class="d-flex-inline-description">
+                                <div>
+                                    <div>
+                                        <h2>Martial Ar Capoeira</h2>
+
+                                    </div>
+
+                                    <p>I love Capoeira. It is a martial art that has centures of existence. It was
+                                        brought
+                                        by
+                                        Africans
+                                        during the last milenium and was adapted and incorporated to Brazil culture</p>
+                                    <p>rondinel@ensign.edu</p>
+                                    <a href="https://capoeirahistory.com/">
+                                        <button class="button">
+                                            Learn More
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div class="mySlides fade">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+                    <div style="margin-right: 3%;">
+                        <div style="display: flex;">
+                            <div>
+                                <img src="images/Brazilian-Art1.jpg" alt="Capoeira" class="justify-items:center">
+
+                            </div>
+                            <div class="d-flex-inline-description">
+                                <div>
+                                    <div>
+                                        <h2>Food</h2>
+
+                                    </div>
+
+                                    <p>I love Capoeira. It is a martial art that has centures of existence. It was
+                                        brought
+                                        by
+                                        Africans
+                                        during the last milenium and was adapted and incorporated to Brazil culture</p>
+                                    <p>rondinel@ensign.edu</p>
+                                    <p><button class="button"><a href="https://capoeirahistory.com/">Learn
+                                                More</a></button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
         </div>
     </div>
 
 
-    <div class="row" style="margin-top: 3%;">
 
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-                <div>
-                    <div style="display: flex;">
-                        <div>
-                            <img src="images/Brazilian-Art1.jpg" alt="Capoeira" class="justify-items:center">
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
 
-                        </div>
-                        <div class="d-flex-inline-description">
-                            <div>
-                                <div>
-                                    <h2>Martial Ar Capoeira</h2>
-
-                                </div>
-
-                                <p>I love Capoeira. It is a martial art that has centures of existence. It was brought
-                                    by
-                                    Africans
-                                    during the last milenium and was adapted and incorporated to Brazil culture</p>
-                                <p>rondinel@ensign.edu</p>
-                                <p><button class="button"><a href="https://capoeirahistory.com/">Learn More</a></button>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-        </div>
-
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
             }
-
-            function showSlides(n) {
-                let i;
-                const slides = document.getElementsByClassName("mySlides");
-                const dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
-        </script>
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
+<footer>
+    <div class="custom-footer">
+        <div style="display: flex;">
+            <h3 style="font-weight: 700;">CS220-01 :: Winter 2023 :: Group Project :: Rondenel & Andy </h1>
+
+        </div>
+    </div>
+</footer>
 
 </html>
