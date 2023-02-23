@@ -5,112 +5,171 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="static/main.css">
+    <link rel="stylesheet" href="../static/main.css">
 
 </head>
 
-<body>
+<body class="custom-padding">
 
 
-    <div class="about-section">
-        <h1>Brazil: A mixing of different cultures and traditions</h1>
+    <div class="custom-navbar">
+        <div style="display: flex;">
+            <h2 style="font-weight: 700;">Brazilian Cuisine: Heaven to the taste palet</h1>
+    
+        </div>
+    </div>
+    <div class="custom-height d-flex-inline-slideshow">
+
+        <div class="slideshow-container">
+            <div class="mySlides fade " style="display: flex;">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+                <div>
+                    <div style="display: flex; background-image: url('../images/Brazilian-Art1.jpg');">
+                        <div>
+                            <img src="../images/Brazilian-Art1.jpg" alt="Capoeira" class="justify-items:center">
+
+                        </div>
+                        <div class="d-flex-inline-description">
+                            <div class="d-flex-inline-description-text-box">
+                                <div>
+                                    <h2 style="margin-top: 0%;">Roast Beef</h2>
+
+                                </div>
+
+                                <p style="margin-bottom: 5%;">I love Capoeira. It is a martial art that has centures of
+                                    existence. It was
+                                    brought
+                                    by
+                                    Africans
+                                </p>
+                                <a href="templates/food.html">
+                                    <button class="button">
+                                        Learn More
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="mySlides fade " style="display: flex; background-image: url('../images/Brazilian-Art1.jpg');">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+                <div>
+                    <div style="display: flex; background-image: url('../images/Brazilian-Art1.jpg');">
+                        <div>
+                            <img src="../images/Brazilian-Art1.jpg" alt="Capoeira" class="justify-items:center">
+
+                        </div>
+                        <div class="d-flex-inline-description">
+                            <div class="d-flex-inline-description-text-box">
+                                <div>
+                                    <h2 style="margin-top: 0%;">Roast Beef1</h2>
+
+                                </div>
+
+                                <p style="margin-bottom: 5%;">I love Capoeira. It is a martial art that has centures of
+                                    existence. It was
+                                    brought
+                                    by
+                                    Africans
+                                </p>
+                                <a href="templates/food.html">
+                                    <button class="button">
+                                        Learn More
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="mySlides fade " style="display: flex; background-image: url('../images/Brazilian-Art1.jpg');">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+                <div>
+                    <div style="display: flex; background-image: url('../images/Brazilian-Art1.jpg');">
+                        <div>
+                            <img src="../images/Brazilian-Art1.jpg" alt="Capoeira" class="justify-items:center">
+
+                        </div>
+                        <div class="d-flex-inline-description">
+                            <div class="d-flex-inline-description-text-box">
+                                <div>
+                                    <h2 style="margin-top: 0%;">Roast Beef3</h2>
+
+                                </div>
+
+                                <p style="margin-bottom: 5%;">I love Capoeira. It is a martial art that has centures of
+                                    existence. It was
+                                    brought
+                                    by
+                                    Africans
+                                </p>
+                                <a href="templates/food.html">
+                                    <button class="button">
+                                        Learn More
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+
+
     </div>
 
 
 
-    <div class="row" style="margin-top: 3%;">
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <div class="card">
-                    <img src="images/Brazilian-Art1.jpg" alt="Capoeira" style="width:100%">
-                    <div class="container">
-                        <h2>Martial Ar Capoeira</h2>
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
 
-                        <p>I love Capoeira. It is a martial art that has centures of existence. It was brought by
-                            Africans
-                            during the last milenium and was adapted and incorporated to Brazil culture</p>
-                        <p>rondinel@ensign.edu</p>
-                        <p><button class="button"><a href="https://capoeirahistory.com/">Capoeira Info</a></button></p>
-                    </div>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="card">
-                    <img src="images/Brazilian-Art.jpg" alt="Capoeira" style="width:100%">
-                    <div class="container">
-                        <h2>Martial Art Capoeira</h2>
-
-                        <p>I love Capoeira. It is a martial art that has centures of existence. It was brought by
-                            Africans
-                            during the last milenium and was adapted and incorporated to Brazil culture</p>
-                        <p>rondinel@ensign.edu</p>
-                        <p><button class="button"><a href="https://capoeirahistory.com/">Capoeira Info</a></button></p>
-                    </div>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="card">
-                    <img src="images/Brazilian-Art1.jpg" alt="Capoeira" style="width:100%">
-                    <div class="container">
-                        <h2>Martial Art Capoeira</h2>
-
-                        <p>I love Capoeira. It is a martial art that has centures of existence. It was brought by
-                            Africans
-                            during the last milenium and was adapted and incorporated to Brazil culture</p>
-                        <p>rondinel@ensign.edu</p>
-                        <p><button class="button"><a href="https://capoeirahistory.com/">Capoeira Info</a></button></p>
-                    </div>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="card">
-                    <img src="images/Brazilian-Art.jpg" alt="Capoeira" style="width:100%">
-                    <div class="container">
-                        <h2>Martial Art Capoeira</h2>
-
-                        <p>I love Capoeira. It is a martial art that has centures of existence. It was brought by
-                            Africans
-                            during the last milenium and was adapted and incorporated to Brazil culture</p>
-                        <p>rondinel@ensign.edu</p>
-                        <p><button class="button"><a href="https://capoeirahistory.com/">Capoeira Info</a></button></p>
-                    </div>
-                </div>
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        </div>
-
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
             }
-
-            function showSlides(n) {
-                let i;
-                const slides = document.getElementsByClassName("mySlides");
-                const dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
-        </script>
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
+<footer>
+    <div class="custom-footer">
+        <div style="display: flex;">
+            <h3 style="font-weight: 700;">CS220-01:: Winter 2023:: Prove 1: Group Project:: Rondenel & Andy </h1>
+
+        </div>
+    </div>
+</footer>
 
 </html>

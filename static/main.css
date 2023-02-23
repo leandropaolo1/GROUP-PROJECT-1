@@ -19,7 +19,14 @@ html {
     justify-items: center;
     margin-left: 3%;
     align-items: end;
-    margin-bottom: 1%;
+    margin-bottom: 5px;
+    
+}
+.d-flex-inline-description-text-box{
+    padding: 5%;
+    background-color: white;
+    margin:5% 10% 5% 10%;
+
 }
 
 .d-flex-inline-slideshow {
@@ -37,7 +44,7 @@ html {
 }
 
 .custom-height {
-    min-height: 70vh;
+    min-height: 80vh;
 }
 
 .custom-navbar {
