@@ -1,0 +1,191 @@
+<!---Main Page-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/main.css">
+
+</head>
+
+<body class="custom-padding">
+
+
+<div class="custom-navbar">
+    <div class="row">
+        <div style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-between;">
+            <div>
+                <h2 style="font-weight: 700;">Brazil: The place where cultures merge</h2>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: end;">
+                <a href="../main.html">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+    <div class="custom-height d-flex-inline-slideshow">
+
+        <div class="slideshow-container">
+            <div class="mySlides fade " style="display: flex;">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+                <div>
+                    <div style="display: flex; background-image: url('../images/Brazilian-Art1.jpg');">
+                        <div>
+                            <img src="../images/Brazilian-Art1.jpg" alt="Capoeira" class="justify-items:center">
+
+                        </div>
+                        <div class="d-flex-inline-description">
+                            <div class="d-flex-inline-description-text-box">
+                                <div>
+                                    <h2 style="margin-top: 0%;">Roast Beef</h2>
+
+                                </div>
+
+                                <p style="margin-bottom: 5%;">I love Capoeira. It is a martial art that has centures of
+                                    existence. It was
+                                    brought
+                                    by
+                                    Africans
+                                </p>
+                                <a href="templates/food.html">
+                                    <button class="button">
+                                        Learn More
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="mySlides fade " style="display: flex; background-image: url('../images/Brazilian-Art1.jpg');">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+                <div>
+                    <div style="display: flex; background-image: url('../images/Brazilian-Art1.jpg');">
+                        <div>
+                            <img src="../images/Brazilian-Art1.jpg" alt="Capoeira" class="justify-items:center">
+
+                        </div>
+                        <div class="d-flex-inline-description">
+                            <div class="d-flex-inline-description-text-box">
+                                <div>
+                                    <h2 style="margin-top: 0%;">Roast Beef1</h2>
+
+                                </div>
+
+                                <p style="margin-bottom: 5%;">I love Capoeira. It is a martial art that has centures of
+                                    existence. It was
+                                    brought
+                                    by
+                                    Africans
+                                </p>
+                                <a href="templates/food.html">
+                                    <button class="button">
+                                        Learn More
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="mySlides fade " style="display: flex; background-image: url('../images/Brazilian-Art1.jpg');">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+                <div>
+                    <div style="display: flex; background-image: url('../images/Brazilian-Art1.jpg');">
+                        <div>
+                            <img src="../images/Brazilian-Art1.jpg" alt="Capoeira" class="justify-items:center">
+
+                        </div>
+                        <div class="d-flex-inline-description">
+                            <div class="d-flex-inline-description-text-box">
+                                <div>
+                                    <h2 style="margin-top: 0%;">Roast Beef3</h2>
+
+                                </div>
+
+                                <p style="margin-bottom: 5%;">I love Capoeira. It is a martial art that has centures of
+                                    existence. It was
+                                    brought
+                                    by
+                                    Africans
+                                </p>
+                                <a href="templates/food.html">
+                                    <button class="button">
+                                        Learn More
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+<footer>
+    <div class="custom-footer">
+        <div style="display: flex;">
+            <h3 style="font-weight: 700;">CS220-01:: Winter 2023:: Prove 1: Group Project:: Rondenel & Andy </h1>
+
+        </div>
+    </div>
+</footer>
+
+</html>
