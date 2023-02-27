@@ -131,3 +131,8 @@ header {
 .dot:hover {
     background-color: #717171;
 }
+
+img {
+    max-height: 80vh;
+    max-width: 80vh;
+}
