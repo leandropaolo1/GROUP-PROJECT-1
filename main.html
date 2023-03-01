@@ -45,12 +45,14 @@
 
                                     </div>
 
-                                    <p>I love Latin Food. It is a Delicious art of cooking that has centures of existence. It was
-                                        brought by a wide range of cultures and nations mostly from Europe during the colonization of the south
-                                        Hemisphere.
-
-                                        during the last milenium and was adapted and incorporated to local methods and ingredients used by
-                                    native americans. It created a special and peculiar style of flavors</p>
+                                    <p>
+                                        Pão de queijo is a traditional Brazilian snack that is popular throughout the
+                                        country. The name translates to "cheese bread" in English.
+                                        Pão de queijo is often served as a snack or appetizer, and it can be found in
+                                        cafes, bakeries, and restaurants throughout Brazil. It is typically enjoyed hot
+                                        and fresh out of the oven, but it can also be reheated or enjoyed at room
+                                        temperature.
+                                    </p>
                                     <a href="templates/cheese_bread.html">
                                         <button class="button">
                                             Learn More
@@ -80,9 +82,10 @@
 
                                     </div>
 
-                                    <p>I love Mexican Food. It is a very specific style of spice food. It has great influence from the Native north american
+                                    <p>I love Mexican Food. It is a very specific style of spice food. It has great
+                                        influence from the Native north american
                                         indians and spanish cusine.
-                                        It is very famous around  the world and test very good</p>
+                                        It is very famous around the world and test very good</p>
                                     <a href="templates/feijao.html">
                                         <button class="button">
                                             Learn More
@@ -112,10 +115,14 @@
 
                                     </div>
 
-                                    <p>We love Indian Food. According to history, Indian cuisine dates back to 5000 years.
-                                        India is a diverse country, and every region has different religions, traditions, and cultures that impact the food.
-                                        The Indian cuisine is strongly influenced by Persian, Mongolians, and Chinese, among many others.
-                                        Indian cuisine has a remarkable flavor and fragrance that comes from a blended mixture of different spices.</p>
+                                    <p>We love Indian Food. According to history, Indian cuisine dates back to 5000
+                                        years.
+                                        India is a diverse country, and every region has different religions,
+                                        traditions, and cultures that impact the food.
+                                        The Indian cuisine is strongly influenced by Persian, Mongolians, and Chinese,
+                                        among many others.
+                                        Indian cuisine has a remarkable flavor and fragrance that comes from a blended
+                                        mixture of different spices.</p>
                                     <a href="templates/feiojada.html">
                                         <button class="button">
                                             Learn More
@@ -151,8 +158,12 @@
             let i;
             const slides = document.getElementsByClassName("mySlides");
             const dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
@@ -162,7 +173,6 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }
-
     </script>
 </body>
 <footer>
